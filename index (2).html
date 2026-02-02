@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Happiest School</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+
+  <!-- TOP NAV -->
+  <div class="top-nav">
+    <img src="logo.png" class="logo" alt="Logo">
+
+    <div class="cbse-text">
+      CBSE Affiliation No: XXXXXXXX
+    </div>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </div>
+
+  <!-- BOTTOM NAV -->
+  <nav class="bottom-nav" id="menu">
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Academics</a>
+      <a href="#">Admissions</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="campus-btns">
+      <a href="#" class="btn white">Junior Campus</a>
+      <a href="#" class="btn outline">Senior Campus</a>
+    </div>
+  </nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+
+  <div class="hero-title">
+    <h1>MASTERMIND SCHOOL</h1>
+    <p>THE HAPPIEST SCHOOL</p>
+  </div>
+
+  <div class="campus-wrapper">
+
+    <!-- JUNIOR -->
+    <div class="campus">
+      <img src="junior.png" alt="Junior Campus">
+
+      <div class="ribbon">APPOINTMENTS OPEN</div>
+
+      <div class="circle-badge">
+        <h4> Happiest Campus</h4>
+        <div class="campus-name">Junior Campus</div>
+        <a href="#" class="explore-btn">Explore Now</a>
+      </div>
+    </div>
+
+    <!-- SENIOR -->
+    <div class="campus">
+      <img src="Senior.png" alt="Senior Campus">
+
+      <div class="ribbon">APPOINTMENTS OPEN</div>
+
+      <div class="circle-badge">
+        <h4>Smartest Campus</h4>
+        <div class="campus-name">Senior Campus</div>
+        <a href="#" class="explore-btn">Explore Now</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= EXPLORE ================= -->
+<section class="explore-section">
+  <h2>
+    Explore <span class="highlight-orange">Best School in Indore</span>
+  </h2>
+  <p>Where excellence, values and joyful learning come together</p>
+</section>
+
+<!-- ================= FULL WIDTH SLIDER ================= -->
+<section class="full-slider">
+
+  <div class="slider-track" id="sliderTrack">
+    <div class="slide"><img src="aa018.jpg"></div>
+    <div class="slide"><img src="aa022.jpg"></div>
+    <div class="slide"><img src="mass_facility.jpg"></div>
+    <div class="slide"><img src="math_lab.jpg"></div>
+    <div class="slide"><img src="robotic_lab.jpg"></div>
+    <div class="slide"><img src="sport_facility.jpg"></div>
+  </div>
+
+  <button class="nav prev" onclick="prevSlide()">&#10094;</button>
+  <button class="nav next" onclick="nextSlide()">&#10095;</button>
+
+</section>
+
+
+
+<!-- ================= MISSION ================= -->
+<section class="mission-section">
+  <h2 class="mission-title">Our Mission</h2>
+  <p class="mission-text">
+    At <strong>The Happiest School</strong>,t Mastermind School, our mission is to nurture every child’s unique potential by providing 
+    a joyful, safe, and inspiring learning environment that fosters academic excellence
+     and holistic development. We are committed to empowering students with strong foundational skills, critical thinking, creativity, and confidence, so they grow into responsible, compassionate, and lifelong learners. Through our innovative curriculum, dedicated educators, and focus on character building alongside academics, we aim to cultivate curious minds who embrace challenges and transform every “I can’t” into “I can!” — preparing them not just for school, but for life beyond the classroom.
+  </p>
+</section>
+
+<!-- JS -->
+<script src="script.js" defer></script>
+
+</body>
+</html>

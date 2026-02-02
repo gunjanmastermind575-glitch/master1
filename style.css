@@ -1,0 +1,500 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #ffffff;
+}
+/* NAVBAR */
+/* HEADER */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+/* TOP NAV */
+.top-nav {
+  background: #ffffff;
+  padding: 12px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 55px;
+}
+
+.cbse-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1b7f3a;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* BOTTOM NAV */
+.bottom-nav {
+  background: #ED2F59;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 6%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 26px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* BUTTONS */
+.campus-btns {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.btn.white {
+  background: #fff;
+  color: #9e1f2f;
+  padding: 8px 20px;
+  border-radius: 30px;
+}
+
+.btn.outline {
+  border: 2px solid #fff;
+  padding: 8px 20px;
+  border-radius: 30px;
+  color: #fff;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .menu-icon {
+    display: block;
+  }
+
+  .bottom-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .bottom-nav.active {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+  }
+
+  .campus-btns {
+    flex-direction: column;
+  }
+}
+
+/* CAMPUS BUTTONS */
+.campus-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.campus-btn {
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+/* Junior */
+.campus-btn.junior {
+  background: #ffffff;
+  color: #9e1f2f;
+}
+
+.campus-btn.junior:hover {
+  background: #f4b400;
+  color: #000;
+}
+
+/* Senior */
+.campus-btn.senior {
+  background: transparent;
+  color: #fff;
+  border: 1.5px solid #fff;
+}
+
+.campus-btn.senior:hover {
+  background: #fff;
+  color: #9e1f2f;
+}
+
+/* HERO */
+.hero {
+  padding: 40px 60px;
+  margin-top: 0px;
+}
+
+.hero-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.hero-title h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #1b7f3a;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+
+.hero-title p {
+  font-size: 15px;
+  color: #444;
+}
+
+/* CAMPUS */
+.campus-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.campus {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.campus img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ================= RIBBON ================= */
+.ribbon {
+  position: absolute;
+  top: 25px;
+  left: -10px;
+  background: #f2c400;
+  padding: 10px 18px;
+  font-weight: 700;
+  color: #1b7f3a;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.ribbon::after {
+  content: "";
+  position: absolute;
+  right: -18px;
+  top: 0;
+  border-top: 22px solid transparent;
+  border-bottom: 22px solid transparent;
+  border-left: 18px solid #f2c400;
+}
+
+.ribbon small {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* ================= CIRCLE BADGE ================= */
+.circle-badge {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  text-align: center;
+  opacity: 0;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+
+  transition: all 0.45s ease;
+}
+
+.circle-badge h4 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1b7f3a;
+}
+
+.circle-badge .campus-name {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.explore-btn {
+  text-decoration: none;
+  background: #1b7f3a;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.explore-btn:hover {
+  background: #145f2c;
+}
+
+/* hover animation */
+.campus:hover .circle-badge {
+  top: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+/* SHOW ON HOVER */
+.campus:hover .ribbon,
+.campus:hover .circle-badge {
+  opacity: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .campus-wrapper {
+    flex-direction: column;
+  }
+
+  .campus {
+    width: 100%;
+  }
+
+  .campus img {
+    height: 300px;
+  }
+
+  .hero-title h1 {
+    font-size: 30px;
+  }
+}
+.explore-section {
+  text-align: center;
+  padding: 60px 20px 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.explore-section h2 {
+  font-size:60px;
+  font-weight:800;
+  color: #1b7f3a;
+}
+
+.explore-section p {
+  font-size:25px;
+  color: #555;
+  margin-top: 8px;
+}
+/* ===============================
+   SLIDER SECTION
+================================ */
+.slider-section {
+  padding: 50px 0 80px;
+}
+
+/* ===============================
+   FULL WIDTH SLIDER
+================================ */
+.full-slider {
+  width: 100vw;
+  height: 620px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ===============================
+   SLIDER CONTAINER
+================================ */
+.slider-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ===============================
+   SLIDER TRACK
+================================ */
+.slider-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+}
+
+/* ===============================
+   SLIDES
+================================ */
+.slide {
+  min-width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===============================
+   NAVIGATION ARROWS
+================================ */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  border: none;
+  font-size: 28px;
+  width: 46px;
+  height: 46px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav:hover {
+  background: #1b7f3a;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+/* ===============================
+   DOTS
+================================ */
+.dots {
+  position: absolute;
+  bottom: 18px;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.dots span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  margin: 0 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.dots span.active {
+  background: #1b7f3a;
+  transform: scale(1.3);
+}
+
+
+/* NAV BUTTONS */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border: none;
+  font-size: 32px;
+  padding: 10px 16px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev { left: 20px; }
+.next { right: 20px; }
+/* MISSION SECTION */
+.mission-section {
+  width: 100%;
+  padding: 90px 15%;
+  text-align: center;
+  background: #fff;
+}
+
+.mission-title {
+  font-family: 'Playfair Display', serif; /* classy font */
+  font-size: 48px;
+  font-weight: 700;
+  color: #1b7f3a;
+  margin-bottom: 25px;
+  position: relative;
+}
+.highlight-orange{
+  color: #f4b400;
+}
+/* small underline accent */
+.mission-title::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #f4b400;
+  display: block;
+  margin: 14px auto 0;
+  border-radius: 2px;
+}
+
+.mission-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #555;
+  max-width: 900px;
+  margin: auto;
+}
